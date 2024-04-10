@@ -1,0 +1,92 @@
+
+
+.EscolhaUmContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & .escolhaum{
+        display: flex;
+        & button{
+            margin: 0px 20px;
+        }
+        & button:hover{
+            transition: all 1000ms;
+            background-color: var(--cor-secundaria);
+            transform: scale(1.3);
+        }   
+   }
+   &.jogadorAtual {
+    display: block;
+    position: absolute;
+    
+    bottom: 20%;
+    & h2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: var(--font-Titulo);
+    }    
+   }
+}
+
+
+@media (max-width:636px) {
+    .escolha1{
+        height: 100px;
+        & img{
+            height: 100%;
+            width: auto;
+        }
+        
+    }
+    .escolha2{
+        height: 100px;
+        & img{
+            height: 100%;
+            width: auto;
+        }
+    }
+    .escolha3{
+        height: 100px;
+        & img{
+            height: 100%;
+            width: auto;
+        }
+    }
+}
+@media (max-width: 430px){
+    .EscolhaUmContainer{
+        & .escolhaum{
+            & button{
+                margin: 0px 7px;
+            }
+            & button:hover{
+            transform: scale(1.0);
+        }
+        } 
+    }
+    .escolha1{
+        height: 80px;
+        & img{
+            height: 100%;
+            width: auto;
+        }
+        
+    }
+    .escolha2{
+        height: 80px;
+        & img{
+            height: 100%;
+            width: auto;
+        }
+    }
+    .escolha3{
+        height: 80px;
+        & img{
+            height: 100%;
+            width: auto;
+        }
+    }
+}
